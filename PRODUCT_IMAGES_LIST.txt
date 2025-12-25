@@ -1,0 +1,132 @@
+================================================================================
+PRODUCT IMAGE FILE NAMES FOR KINGDOM COMMERCE
+================================================================================
+
+Place these files in: public/images/products/
+
+================================================================================
+HOMEPAGE PRODUCT GRID (8 products)
+================================================================================
+
+1. dashiki.jpg
+   Product: Premium African Print Dashiki Shirt
+   Vendor: AfroFashion Co.
+   Size: 800x800px
+
+2. spice-blend.jpg
+   Product: Handcrafted Caribbean Spice Blend
+   Vendor: Island Flavors
+   Size: 800x800px
+
+3. hair-care.jpg
+   Product: Natural Hair Care Bundle
+   Vendor: Crown Beauty
+   Size: 800x800px
+
+4. coffee.jpg
+   Product: African Artisan Coffee Beans
+   Vendor: Ethiopian Roasters
+   Size: 800x800px
+
+5. kente-scarf.jpg
+   Product: Handwoven Kente Cloth Scarf
+   Vendor: Ghana Textiles
+   Size: 800x800px
+
+6. rum-cake.jpg
+   Product: Caribbean Rum Cake Collection
+   Vendor: Tropical Treats
+   Size: 800x800px
+
+7. books.jpg
+   Product: Black-Owned Book Collection
+   Vendor: Literary Kingdom
+   Size: 800x800px
+
+8. shea-butter.jpg
+   Product: Artisan Shea Butter Soap
+   Vendor: Natural Essentials
+   Size: 800x800px
+
+================================================================================
+VENDOR STOREFRONT - AfroFashion Co. (8 products)
+================================================================================
+
+1. dashiki.jpg (shared with homepage)
+   Product: Premium African Print Dashiki Shirt
+
+2. ankara-dress.jpg
+   Product: Ankara Print Maxi Dress
+   Size: 800x800px
+
+3. kente-blazer.jpg
+   Product: Kente Pattern Blazer
+   Size: 800x800px
+
+4. headwrap.jpg
+   Product: African Print Headwrap Set
+   Size: 800x800px
+
+5. jumpsuit.jpg
+   Product: Modern Dashiki Jumpsuit
+   Size: 800x800px
+
+6. scarf-collection.jpg
+   Product: African Print Scarf Collection
+   Size: 800x800px
+
+7. agbada.jpg
+   Product: Traditional Agbada Set
+   Size: 800x800px
+
+8. tote-bag.jpg
+   Product: African Print Tote Bag
+   Size: 800x800px
+
+================================================================================
+TOTAL UNIQUE IMAGE FILES NEEDED: 15
+================================================================================
+
+Shared files (used in both homepage and vendor page):
+- dashiki.jpg
+
+Homepage only:
+- spice-blend.jpg
+- hair-care.jpg
+- coffee.jpg
+- kente-scarf.jpg
+- rum-cake.jpg
+- books.jpg
+- shea-butter.jpg
+
+Vendor page only:
+- ankara-dress.jpg
+- kente-blazer.jpg
+- headwrap.jpg
+- jumpsuit.jpg
+- scarf-collection.jpg
+- agbada.jpg
+- tote-bag.jpg
+
+================================================================================
+IMAGE SPECIFICATIONS
+================================================================================
+
+Format: JPG or WebP
+Size: 800x800px (square, 1:1 aspect ratio)
+File Size: Under 200KB (optimized for web)
+Quality: High quality, web-optimized
+
+================================================================================
+FILE LOCATION
+================================================================================
+
+Full path: public/images/products/[filename].jpg
+URL path: /images/products/[filename].jpg
+
+Example:
+- File location: public/images/products/dashiki.jpg
+- Used in code as: src="/images/products/dashiki.jpg"
+
+================================================================================
+

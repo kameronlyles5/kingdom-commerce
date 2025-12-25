@@ -178,6 +178,11 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/impact" className="hover:text-kingdom-gold transition-colors duration-200">
+                    Global Impact
+                  </Link>
+                </li>
+                <li>
                   <Link href="/shipping" className="hover:text-kingdom-gold transition-colors duration-200">
                     Shipping Info
                   </Link>

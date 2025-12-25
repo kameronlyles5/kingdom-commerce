@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Search, Menu, X, ChevronDown, ShoppingBag } from 'lucide-react'
+import { Search, Menu, X, ChevronDown, ShoppingBag, User } from 'lucide-react'
 import Link from 'next/link'
 import { useCart } from '@/contexts/CartContext'
 
@@ -82,6 +82,13 @@ export default function Navigation() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
+            <Link
+              href="/account"
+              className="p-2 text-pure-white hover:text-kingdom-gold transition-colors duration-200"
+              aria-label="Account"
+            >
+              <User className="w-6 h-6" />
+            </Link>
             <button
               onClick={openCart}
               className="relative p-2 text-pure-white hover:text-kingdom-gold transition-colors duration-200"
@@ -155,6 +162,16 @@ export default function Navigation() {
                 </div>
               )}
             </div>
+
+            {/* Mobile Account Link */}
+            <Link
+              href="/account"
+              className="w-full flex items-center justify-center space-x-2 px-6 py-3 border-2 border-gray-700 text-pure-white font-semibold rounded-full hover:border-kingdom-gold hover:text-kingdom-gold transition-all duration-300"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <User className="w-5 h-5" />
+              <span>My Account</span>
+            </Link>
 
             {/* Mobile Cart Button */}
             <button

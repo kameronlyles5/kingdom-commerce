@@ -156,6 +156,16 @@ export default function Footer() {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link href="/terms" className="hover:text-kingdom-gold transition-colors duration-200">
+                    Terms of Service
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-kingdom-gold transition-colors duration-200">
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
 

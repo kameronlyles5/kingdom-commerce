@@ -43,9 +43,22 @@ export default function ProductCard({
     >
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden bg-gray-800">
-        {/* Placeholder Image */}
+        {/* Product Image */}
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            // Fallback to placeholder if image fails to load
+            const target = e.target as HTMLImageElement
+            target.style.display = 'none'
+            const placeholder = target.nextElementSibling as HTMLElement
+            if (placeholder) placeholder.style.display = 'block'
+          }}
+        />
+        {/* Placeholder Image (fallback) */}
         <div
-          className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900"
+          className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 hidden"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23D4AF37;stop-opacity:0.1'/%3E%3Cstop offset='100%25' style='stop-color:%230A0A0A;stop-opacity:1'/%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='24' fill='%23D4AF37' text-anchor='middle' opacity='0.3'%3EProduct Image%3C/text%3E%3C/svg%3E")`,
             backgroundSize: 'cover',
